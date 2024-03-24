@@ -1,5 +1,89 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    --text-color: #eee;
+    --body-background-color: #2E3340;
+    --back-color: #61687A;
+    --video-block-color: #1F222F;
+    --primary-width: 1300px;
+}
+.general{
+    background-color: var(--back-color);
+    padding: 30px;
+    color: var(--text-color)
+}
+
+.container {
+   display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: auto;
+    width: var(--primary-width);
+    background-color: var(--body-background-color);
+    border-radius: 10px;
+    align-items: center;
+}
+
+video{
+    height: 250px;
+}
+
+.video-style{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    background-color: var(--video-block-color);
+    width: 600px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.audio1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    background-color: var(--video-block-color);
+    width: 600px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.audio2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    background-color: var(--video-block-color);
+    width: 600px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.audio3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    background-color: var(--video-block-color);
+    width: 600px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 10px;
 }
