@@ -5,85 +5,87 @@
 }
 
 html {
-    --text-color: #eee;
-    --body-background-color: #2E3340;
-    --back-color: #61687A;
+    --primary-text-color: #eee;
     --video-block-color: #1F222F;
-    --primary-width: 1300px;
+    --primary-width: 1280px;
+    --primary-height: 90vh;
+    --skryabin-text-color: #baf566;
+    --left-bg-color: #353b48;
+    --header-bg-color: #2b2f3a;
+    --right-bg-color: #18252a;
+    --border-radius: 10px;
 }
-.general{
-    background-color: var(--back-color);
+
+@font-face {
+    font-family: MyFont;
+    src: url("/fonts/Nunito-Bold.ttf");
+}
+
+.body-container {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    font-family: MyFont, cursive;
+    background: #111 url(/images/bg-image.png);
+    color: var(--primary-text-color);
     padding: 30px;
-    color: var(--text-color)
 }
 
-.container {
-   display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin: auto;
+.grid-container {
+    display: grid;
     width: var(--primary-width);
-    background-color: var(--body-background-color);
-    border-radius: 10px;
+    height: var(--primary-height);
+    grid-template-columns: 1fr 3fr;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: var(--border-radius);
+    background-color: var(--skryabin-text-color);
+}
+
+.left-flexblock-container {
+    background-color: var(--left-bg-color);
+    border-radius: var(--border-radius);
+}
+
+.header-flexblock-container {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    background-color: var(--header-bg-color);
+    height: 50px;
+    border-radius: var(--border-radius);
 }
 
-video{
-    height: 250px;
+.right-flexblock-container {
+    display: grid;
+    height: 200px;
+    background-color: var(--right-bg-color);
+    border-radius: var(--border-radius);
 }
 
-.video-style{
+video {
+    height: 120px;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--video-block-color);
+    border-radius: 10px;
+    height: 200px;
+}
+
+.audio-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-    background-color: var(--video-block-color);
-    width: 600px;
-    height: 350px;
-    border-radius: 10px;
-    padding: 10px;
+    gap: 5px;
+    width: 320px;
+    height: 130px;
+    background-color: dodgerblue;
 }
 
-.audio1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-    background-color: var(--video-block-color);
-    width: 600px;
-    height: 350px;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.audio2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-    background-color: var(--video-block-color);
-    width: 600px;
-    height: 350px;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.audio3{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-    background-color: var(--video-block-color);
-    width: 600px;
-    height: 350px;
-    border-radius: 10px;
-    padding: 10px;
+span:nth-child(1) {
+    color: var(--skryabin-text-color);
 }
