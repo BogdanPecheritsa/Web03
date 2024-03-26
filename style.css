@@ -6,8 +6,8 @@
 
 html {
     --primary-text-color: #eee;
-    --primary-width: 1280px;
-    --primary-height: 90vh;
+    --primary-width: 1116px;
+    --primary-height: 680px;
     --skryabin-text-color: #baf566;
     --left-bg-color: #353b48;
     --content-bg-color: #2b2f3a;
@@ -23,7 +23,7 @@ html {
 .body-container {
     overflow: hidden;
     font-family: MyFont, cursive;
-    font-size: 12px;
+    font-size: 10px;
     background: #111 url(/images/bg-image.png);
     color: var(--primary-text-color);
     padding: 30px;
@@ -31,23 +31,23 @@ html {
 
 .grid-container {
     display: grid;
-    width: var(--primary-width);
-    height: var(--primary-height);
     grid-template-columns: 30fr 70fr;
     justify-content: center;
     margin: 0 auto;
     border-radius: var(--border-radius);
     background-color: var(--primary-bg-color);
+    width: var(--primary-width);
+    height: var(--primary-height);
 }
 
 .left-flexblock-container {
     background-color: var(--left-bg-color);
     border-radius: var(--border-radius);
-    margin: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 65px
+    gap: 30px;
+    height: var(--primary-height);
 }
 
 .header-flexblock-container {
@@ -63,8 +63,9 @@ html {
 
 .right-flexblock-container {
     display: grid;
-    background-color: var(--primary-bg-color);
+    background-color: var(--left-bg-color);
     border-radius: var(--border-radius);
+    height: var(--primary-height);
 }
 
 video {
@@ -89,8 +90,8 @@ video {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 350px;
-    height: 180px;
+    width: 320px;
+    height: 120px;
     background-color: var(--content-bg-color);
     border-radius: var(--border-radius);
     padding: 20px;
