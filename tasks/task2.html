@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="/styles/style2.css"/>
+    <title>Task1</title>
+</head>
+<body>
+<form>
+    <div class="space-between">
+        <label>Login:</label>
+        <label>
+            <input
+                    type="text"
+                    placeholder="example@example.com"
+                    required
+                    autocomplete="off"
+            />
+        </label>
+    </div>
+    <div class="space-between">
+        <label>Пароль</label>
+        <label>
+            <input type="password" placeholder="********" required/>
+        </label>
+    </div>
+    <div class="space-between">
+        <label>Повторіть пароль:</label>
+        <label>
+            <input type="password" placeholder="********" required/>
+        </label>
+    </div>
+    <div class="space-between">
+        <label>Стать:</label>
+        <div class="radio">
+            <label>
+                <input type="radio" name="gender" value="male"/>
+            </label> Чоловік
+            <label>
+                <input type="radio" name="gender" value="male"/>
+            </label> Жінка
+            <span>❌</span>Інше
+        </div>
+    </div>
+    <div class="space-between">
+        <label>Вкажіть місто</label>
+            <select>
+                <option>Житомир</option>
+                <option>Київ</option>
+                <option>Львів</option>
+            </select>
+    </div>
+    <div class="space-between">
+        <label>Інтереси:</label>
+        <label>
+            <input type="checkbox" value="sport"/>
+        </label> футбол
+        <label>
+            <input type="checkbox" value="sport"/>
+        </label> шахи
+        <label>
+            <input type="checkbox" value="sport"/>
+        </label> малювання
+        <label>
+            <input type="checkbox" value="sport"/>
+        </label> музика
+    </div>
+    <div class="buttons">
+        <input type="reset" value="Очистити"/>
+        <input type="submit" value="Надіслати"/>
+    </div>
+</form>
+</body>
+</html>
