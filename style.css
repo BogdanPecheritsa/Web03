@@ -5,14 +5,18 @@
 }
 
 html {
-    --primary-text-color: #eee;
     --primary-width: 1116px;
     --primary-height: 680px;
+    --left-block-content-width: 314px;
+    --text-color: #eee;
     --skryabin-text-color: #baf566;
-    --left-bg-color: #353b48;
-    --content-bg-color: #2b2f3a;
-    --primary-bg-color: #18252a;
+    --bg-color: #18252a;
+    --bg-color-second: #353b48;
+    --bg-color-third: #2b2f3a;
     --border-radius: 10px;
+    --titles-font-size: 24px;
+    --video-width: 540px;
+    --titles-height: 50px;
 }
 
 @font-face {
@@ -25,7 +29,7 @@ html {
     font-family: MyFont, cursive;
     font-size: 10px;
     background: #111 url(/images/bg-image.png);
-    color: var(--primary-text-color);
+    color: var(--text-color);
     padding: 30px;
 }
 
@@ -35,37 +39,40 @@ html {
     justify-content: center;
     margin: 0 auto;
     border-radius: var(--border-radius);
-    background-color: var(--primary-bg-color);
+    background-color: var(--bg-color);
     width: var(--primary-width);
     height: var(--primary-height);
 }
 
 .left-flexblock-container {
-    background-color: var(--left-bg-color);
+    background-color: var(--bg-color-second);
     border-radius: var(--border-radius);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    margin-right: 5px;
+    gap: 44px;
     height: var(--primary-height);
+    width: 330px;
 }
 
 .header-flexblock-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--content-bg-color);
+    background-color: var(--bg-color-third);
     height: 50px;
+    margin-bottom: 5px;
     border-radius: var(--border-radius);
-    margin: 5px;
     font-size: 20px;
 }
 
 .right-flexblock-container {
-    display: grid;
-    background-color: var(--left-bg-color);
+    display: flex;
+    flex-direction: column;
     border-radius: var(--border-radius);
     height: var(--primary-height);
+    width: 781px;
 }
 
 video {
@@ -75,14 +82,40 @@ video {
 
 .video-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color-third);
+    height: 630px;
+    border-radius: var(--border-radius);
+}
+
+.video-inner {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: var(--content-bg-color);
+    justify-content: flex-start;
     border-radius: var(--border-radius);
-    height: 400px;
-    width: 600px;
-    margin: 5px;
+    gap: 7px;
+}
+
+.video-block{
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-color-second);
+    width: var(--video-width);
+    height: 320px;
+    border-radius: var(--border-radius);
+}
+
+.video-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--titles-font-size);
+    background-color: var(--bg-color-second);
+    width: var(--video-width);
+    height: var(--titles-height);
+    border-radius: var(--border-radius);
 }
 
 .audio-container {
@@ -90,22 +123,22 @@ video {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 320px;
-    height: 120px;
-    background-color: var(--content-bg-color);
+    width: var(--left-block-content-width);
+    height: 160px;
+    padding: 5px;
+    background-color: var(--bg-color-third);
     border-radius: var(--border-radius);
-    padding: 20px;
 }
 
-.title-container{
-    margin-top: 15px;
+.audio-title-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 350px;
-    height: 70px;
-    font-size: 28px;
-    background-color: var(--content-bg-color);
+    width: var(--left-block-content-width);
+    height: var(--titles-height);
+    margin-top: 8px;
+    font-size: var(--titles-font-size);
+    background-color: var(--bg-color-third);
     border-radius: var(--border-radius);
 }
 
@@ -113,6 +146,6 @@ span:nth-child(1) {
     color: var(--skryabin-text-color);
 }
 
-.audio-container > h1{
+.audio-container > h1 {
     margin-bottom: 10px;
 }
