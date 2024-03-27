@@ -10,91 +10,96 @@
     <title>Task2</title>
 </head>
 <body>
-<form action="">
-    <h2 class="title-container">Login Form 1</h2>
-    <label class="elements-container">
-        <span>Login:</span>
-        <input type="email" name="login" id="login" placeholder="example@example.com" required/>
-    </label>
-    <label class="elements-container">
-        <span>Password:</span>
-        <input type="password" name="password" id="password" placeholder="********" required/>
-    </label>
-    <label class="elements-container">
-        <span>Repeat the password:</span>
-        <input type="password" name="password-repeat" id="password-repeat" placeholder="********" required/>
-    </label>
-    <label class="elements-container">
-        <span>Sex:</span>
-        <div class="radio-container">
-            <input type="radio" name="gender" value="male"/>Male
-            <input type="radio" name="gender" value="female"/>Female
+<header>
+    <h1 class="header-task2-container">Task2</h1>
+</header>
+<section>
+    <form action="">
+        <h2 class="title-container">Login Form 1</h2>
+        <label class="elements-container">
+            <span>Login:</span>
+            <input type="email" name="login" id="login" placeholder="example@example.com" required/>
+        </label>
+        <label class="elements-container">
+            <span>Password:</span>
+            <input type="password" name="password" id="password" placeholder="********" required/>
+        </label>
+        <label class="elements-container">
+            <span>Repeat the password:</span>
+            <input type="password" name="password-repeat" id="password-repeat" placeholder="********" required/>
+        </label>
+        <label class="elements-container">
+            <span>Sex:</span>
+            <div class="radio-container">
+                <input type="radio" name="gender" value="male"/>Male
+                <input type="radio" name="gender" value="female"/>Female
+            </div>
+        </label>
+        <label class="elements-container">
+            <span>Specify the country:</span>
+            <select name="country-list" id="country-list">
+                <option value="ukraine">Ukraine</option>
+                <option value="poland">Poland</option>
+                <option value="italy">Italy</option>
+            </select>
+        </label>
+        <label class="elements-container">
+            <span>About me:</span>
+            <textarea name="longtext" id="longtext" placeholder="I'm..."></textarea>
+        </label>
+        <div class="buttons">
+            <input type="submit" value="Send"/>
         </div>
-    </label>
-    <label class="elements-container">
-        <span>Specify the country:</span>
-        <select name="country-list" id="country-list">
-            <option value="ukraine">Ukraine</option>
-            <option value="poland">Poland</option>
-            <option value="italy">Italy</option>
-        </select>
-    </label>
-    <label class="elements-container">
-        <span>About me:</span>
-        <textarea name="longtext" id="longtext" placeholder="I'm..."></textarea>
-    </label>
-    <div class="buttons">
-        <input type="submit" value="Send"/>
-    </div>
-</form>
-<form action="">
-    <h2 class="title-container">Login Form 2</h2>
-    <label class="elements-container">
-        <span>Login:</span>
-        <input type="email" name="login1" id="login1" placeholder="example@example.com" required/>
-    </label>
-    <label class="elements-container">
-        <span>Password:</span>
-        <input type="password" name="password1" id="password1" placeholder="********" required/>
-    </label>
-    <label class="elements-container">
-        <span>Repeat the password:</span>
-        <input type="password" name="password-repeat2" id="password-repeat2" placeholder="********" required/>
-    </label>
-    <label class="elements-container">
-        <span>Sex:</span>
-        <div class="radio-container">
-            <input type="radio" name="gender1" value="male1"/>Male
-            <input type="radio" name="gender2" value="female2"/>Female
+    </form>
+    <form action="">
+        <h2 class="title-container">Login Form 2</h2>
+        <label class="elements-container">
+            <span>Login:</span>
+            <input type="email" name="login1" id="login1" placeholder="example@example.com" required/>
+        </label>
+        <label class="elements-container">
+            <span>Password:</span>
+            <input type="password" name="password1" id="password1" placeholder="********" required/>
+        </label>
+        <label class="elements-container">
+            <span>Repeat the password:</span>
+            <input type="password" name="password-repeat2" id="password-repeat2" placeholder="********" required/>
+        </label>
+        <label class="elements-container">
+            <span>Sex:</span>
+            <div class="radio-container">
+                <input type="radio" name="gender1" value="male1"/>Male
+                <input type="radio" name="gender2" value="female2"/>Female
+            </div>
+        </label>
+        <label class="elements-container">
+            <span>Specify the city:</span>
+            <select name="city-list" id="city-list">
+                <option value="zhytomyr">Zhytomyr</option>
+                <option value="kyiv">Kyiv</option>
+                <option value="lviv">Lviv</option>
+            </select>
+        </label>
+        <label class="elements-container">
+            <span>Interests:</span>
+            <label>
+                <input type="checkbox" name="inerests[]" value="football"/>football
+            </label>
+            <label>
+                <input type="checkbox" name="inerests[]" value="chess"/>chess
+            </label>
+            <label>
+                <input type="checkbox" name="inerests[]" value="art"/>art
+            </label>
+            <label>
+                <input type="checkbox" name="inerests[]" value="music"/>music
+            </label>
+        </label>
+        <div class="buttons">
+            <input type="submit" value="Send"/>
+            <input type="reset" value="Reset">
         </div>
-    </label>
-    <label class="elements-container">
-        <span>Specify the city:</span>
-        <select name="city-list" id="city-list">
-            <option value="zhytomyr">Zhytomyr</option>
-            <option value="kyiv">Kyiv</option>
-            <option value="lviv">Lviv</option>
-        </select>
-    </label>
-    <label class="elements-container">
-        <span>Interests:</span>
-        <label>
-            <input type="checkbox" name="inerests[]" value="football"/>football
-        </label>
-        <label>
-            <input type="checkbox" name="inerests[]" value="chess"/>chess
-        </label>
-        <label>
-            <input type="checkbox" name="inerests[]" value="art"/>art
-        </label>
-        <label>
-            <input type="checkbox" name="inerests[]" value="music"/>music
-        </label>
-    </label>
-    <div class="buttons">
-        <input type="submit" value="Send"/>
-        <input type="reset" value="Reset">
-    </div>
-</form>
+    </form>
+</section>
 </body>
 </html>
