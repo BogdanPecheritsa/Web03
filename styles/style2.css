@@ -79,13 +79,13 @@ select {
     width: var(--elements-width);
 }
 
-.send-button {
+.buttons {
     display: flex;
     gap: 12px;
     justify-content: center;
 }
 
-.send-button input {
+.buttons input {
     padding: 12px 24px;
     border-radius: var(--border-radius);
     border: none;
@@ -97,7 +97,7 @@ select {
     width: var(--elements-width);
 }
 
-.send-button input:hover {
+.buttons input:hover {
     background-color: var(--third-color);
 }
 

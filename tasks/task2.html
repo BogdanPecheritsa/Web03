@@ -43,7 +43,7 @@
         <span>About me:</span>
         <textarea name="longtext" id="longtext" placeholder="I'm..."></textarea>
     </label>
-    <div class="send-button">
+    <div class="buttons">
         <input type="submit" value="Send"/>
     </div>
 </form>
@@ -70,18 +70,30 @@
     </label>
     <label class="elements-container">
         <span>Specify the city:</span>
-        <select name="country-list" id="country-list">
-            <option value="ukraine">Zhytomyr</option>
-            <option value="poland">Kyiv</option>
-            <option value="italy">Lviv</option>
+        <select name="city-list" id="city-list">
+            <option value="zhytomyr">Zhytomyr</option>
+            <option value="kyiv">Kyiv</option>
+            <option value="lviv">Lviv</option>
         </select>
     </label>
     <label class="elements-container">
-        <span>About me:</span>
-        <textarea name="longtext" id="longtext" placeholder="I'm..."></textarea>
+        <span>Interests:</span>
+        <label>
+            <input type="checkbox" name="inerests[]" value="football"/>football
+        </label>
+        <label>
+            <input type="checkbox" name="inerests[]" value="chess"/>chess
+        </label>
+        <label>
+            <input type="checkbox" name="inerests[]" value="art"/>art
+        </label>
+        <label>
+            <input type="checkbox" name="inerests[]" value="music"/>music
+        </label>
     </label>
-    <div class="send-button">
+    <div class="buttons">
         <input type="submit" value="Send"/>
+        <input type="reset" value="Reset">
     </div>
 </form>
 </body>
