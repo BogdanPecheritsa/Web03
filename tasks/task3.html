@@ -13,43 +13,138 @@
 <header>
     <h1 class="header-task2-container">Task3</h1>
 </header>
-<section class="grid-container">
-    <div class="left-flexbox-container">
+<form action="">
+    <section class="grid-container">
+        <div class="left-flexbox-container">
             <fieldset class="personal-data-container">
                 <legend>Personal data</legend>
                 <label for="feedbackid" class="elements-of-form-container">
                     Feedback ID<input type="text" name="feedbackid" id="feedbackid" placeholder="12345" disabled>
                 </label>
-                <label for="travelersname" class="elements-of-form-container">
-                    Traveler's name<input type="text" name="travelersname" id="travelersname" placeholder="PesPatron">
+                <label for="visitorsname" class="elements-of-form-container">
+                    Visitor's email<input type="email" name="visitorsname" id="visitorsname"
+                                          placeholder="PesPatron@gmail.com"
+                                          required autocomplete="off">
                 </label>
             </fieldset>
-            <fieldset class="feedback-about-the-trip-container">
-                <legend>Feedback about the trip</legend>
-                <label for="countryofvisit" class="elements-of-form-container">
-                    Country of visit<input type="text" name="countryofvisit" id="countryofvisit" placeholder="Norway">
+            <fieldset class="impression-feedback-container">
+                <legend>Impression feedback</legend>
+                <label for="visitedcountry" class="elements-of-form-container">
+                    Visited country<input type="text" name="visitedcountry" id="visitedcountry" placeholder="Norway"
+                                          pattern="^([a-zA-Z]{2,})$"
+                                          title="Маленькі та великі латинські літери. Мінімум 2 символи" required>
                 </label>
-                <label for="cities" class="elements-of-form-container">
-                    City<select name="cities" id="cities">
-                    <option>Oslo</option>
-                    <option>Bergen</option>
-                    <option>Stavanger</option>
-                    <option>Sandnes</option>
-                    <option>Trondheim</option>
-                    <option>Kristiansand</option>
-                    <option>Sandvika</option>
-                    <option>Drammen</option>
-                    <option>Asker</option>
-                    <option>Tønsberg</option>
-                    <option>Ålesund</option>
-                    <option>Skien</option>
-                </select>
+                <label for="cities-list" class="elements-of-form-container">
+                    City<input type="text" list="cities-list" name="cities-list" placeholder="Oslo" required>
+                    <datalist id="cities-list">
+                        <option value="Oslo"></option>
+                        <option value="Bergen"></option>
+                        <option value="Stavanger"></option>
+                        <option value="Sandnes"></option>
+                        <option value="Trondheim"></option>
+                        <option value="Kristiansand"></option>
+                        <option value="Sandvika"></option>
+                        <option value="Drammen"></option>
+                        <option value="Asker"></option>
+                        <option value="Tønsberg"></option>
+                        <option value="Ålesund"></option>
+                        <option value="Skien"></option>
+                    </datalist>
+                </label>
+                <label for="triprating" class="elements-of-form-container">
+                    Trip rating<input type="range" name="triprating" id="triprating" min="0" max="10" step="1"
+                                      value="5">
+                    <output name="value" for="triprating">5</output>
+                </label>
+                <label for="personnelrating" class="elements-of-form-container">
+                    Personnel rating<input type="number" name="personnelrating" id="personnelrating" min="0" max="10"
+                                           step="1" placeholder="5">
+                </label>
+                <label for="feedbacktext" class="elements-of-form-container">Feedback text<textarea name="feedbacktext"
+                                                                                                    id="feedbacktext"
+                                                                                                    spellcheck="false"
+                                                                                                    placeholder="I'm exciting of..."></textarea>
                 </label>
             </fieldset>
-    </div>
-    <fieldset class="hotel-rating-container">
-        <legend>Hotel rating</legend>
-    </fieldset>
-</section>
+        </div>
+        <fieldset class="water-park-rating-container">
+            <legend>Water park rating</legend>
+            <label for="waterparkname" class="elements-of-form-container">
+                Water park's name<input type="text" name="waterparkname" id="waterparkname"
+                                        placeholder="Tsunami Aquapark"
+                                        required>
+            </label>
+            <label for="dateofvisit" class="elements-of-form-container">
+                Date of visit<input type="date" name="dateofvisit" id="dateofvisit" required>
+            </label>
+            <label class="radio-container">
+                Hours in the water park:
+                <label>
+                    <input type="radio" name="hours" value="1">1h
+                </label>
+                <label>
+                    <input type="radio" name="hours" value="3">3h
+                </label>
+                <label>
+                    <input type="radio" name="hours" value="5">5h
+                </label>
+                <label>
+                    <input type="radio" name="hours" value="8" checked>8h
+                </label>
+            </label>
+            <label class="checkbox-container">
+                Tried's slides:
+                <label>
+                    <input type="checkbox" name="slides[]" value="jiggler">Jiggler
+                </label>
+                <label>
+                    <input type="checkbox" name="slides[]" value="dazzler">Dazzler
+                </label>
+                <label>
+                    <input type="checkbox" name="slides[]" value="voyager" checked>Voyager
+                </label>
+                <label>
+                    <input type="checkbox" name="slides[]" value="shocker">Shocker
+                </label>
+            </label>
+            <label for="braceletcolor" class="elements-of-form-container">
+                Bracelet's color<input type="color" name="braceletcolor" id="braceletcolor" value="#0075FF">
+            </label>
+            <label for="varietyofslides" class="elements-of-form-container">
+                Variety of slides<select name="varietyofslides" id="varietyofslides">
+                <optgroup label="low">
+                    <option value="verylittle">very little</option>
+                    <option value="few">few</option>
+                </optgroup>
+                <optgroup label="middle">
+                    <option value="average" selected>average</option>
+                    <option value="medium">medium</option>
+                </optgroup>
+                <optgroup label="high">
+                    <option value="many">many</option>
+                    <option value="overmuch">overmuch</option>
+                </optgroup>
+            </select>
+            </label>
+            <label for="typesofslides" class="elements-of-form-container">
+                The best types of slides<select name="typesofslides" id="typesofslides" multiple>
+                <option value="jiggler">Jiggler</option>
+                <option value="dazzler">Dazzler</option>
+                <option value="voyager">Voyager</option>
+                <option value="shocker">Shocker</option>
+                <option value="discoverer">Discoverer</option>
+                <option value="adventurer">Adventurer</option>
+                <option value="waverider">WaveRider</option>
+                <option value="challenger">Challenger</option>
+                <option value="doublediver">DoubleDiver</option>
+            </select>
+            </label>
+            <div class="buttons">
+                <input type="submit" value="Send"/>
+                <input type="reset" value="Reset"/>
+            </div>
+        </fieldset>
+    </section>
+</form>
 </body>
 </html>
