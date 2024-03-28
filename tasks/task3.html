@@ -1,10 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="/styles/style3.css"/>
+    <title>Task3</title>
 </head>
 <body>
-$END$
+<header>
+    <h1 class="header-task2-container">Task3</h1>
+</header>
+<section class="grid-container">
+    <div class="left-flexbox-container">
+            <fieldset class="personal-data-container">
+                <legend>Personal data</legend>
+                <label for="feedbackid" class="elements-of-form-container">
+                    Feedback ID<input type="text" name="feedbackid" id="feedbackid" placeholder="12345" disabled>
+                </label>
+                <label for="travelersname" class="elements-of-form-container">
+                    Traveler's name<input type="text" name="travelersname" id="travelersname" placeholder="PesPatron">
+                </label>
+            </fieldset>
+            <fieldset class="feedback-about-the-trip-container">
+                <legend>Feedback about the trip</legend>
+                <label for="countryofvisit" class="elements-of-form-container">
+                    Country of visit<input type="text" name="countryofvisit" id="countryofvisit" placeholder="Norway">
+                </label>
+                <label for="cities" class="elements-of-form-container">
+                    City<select name="cities" id="cities">
+                    <option>Oslo</option>
+                    <option>Bergen</option>
+                    <option>Stavanger</option>
+                    <option>Sandnes</option>
+                    <option>Trondheim</option>
+                    <option>Kristiansand</option>
+                    <option>Sandvika</option>
+                    <option>Drammen</option>
+                    <option>Asker</option>
+                    <option>Tønsberg</option>
+                    <option>Ålesund</option>
+                    <option>Skien</option>
+                </select>
+                </label>
+            </fieldset>
+    </div>
+    <fieldset class="hotel-rating-container">
+        <legend>Hotel rating</legend>
+    </fieldset>
+</section>
 </body>
 </html>

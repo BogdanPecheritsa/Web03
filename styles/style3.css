@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    --left-flexblock-width: 500px;
+    --border-radius: 10px;
+    --gap: 5px;
+    --first-color3: #FFD5AF;
+    --second-color3: #E59A59;
+    --third-color3: #888870;
+    --fourth-color3: #712E1E;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--first-color3);
+    width: 1105px;
+    height: 50px;
+    border-radius: var(--border-radius);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: var(--left-flexblock-width) 600px;
+    grid-template-rows: 590px;
+    justify-content: center;
+    gap: var(--gap);
+}
+
+.left-flexbox-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+.personal-data-container{
+    display: flex;
+    justify-content: space-around;
+    border-radius: var(--border-radius);
+    width: var(--left-flexblock-width);
+    padding: 10px;
+}
+
+.feedback-about-the-trip-container{
+    display: flex;
+    justify-content: space-around;
+    border-radius: var(--border-radius);
+    width: var(--left-flexblock-width);
+    padding: 10px;
+    height: 490px;
+}
+
+.hotel-rating-container{
+    border-radius: var(--border-radius);
+}
+
+.elements-of-form-container{
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+}
+
+select{
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+}
