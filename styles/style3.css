@@ -7,6 +7,7 @@
 html {
     --left-flexblock-width: 500px;
     --border-radius-10px: 10px;
+    --border-radius-5px: 5px;
     --padding-10px: 10px;
     --padding-5px: 5px;
     --gap-5px: 5px;
@@ -88,7 +89,7 @@ header {
 }
 
 input {
-    border-radius: 5px;
+    border-radius: var(--border-radius-5px);
     width: 200px;
     height: var(--gap-30px);
     padding: var(--padding-5px);
@@ -96,7 +97,7 @@ input {
 }
 
 select {
-    border-radius: 5px;
+    border-radius: var(--border-radius-5px);
     width: 200px;
     height: 30px;
     padding: var(--padding-5px);
@@ -109,6 +110,7 @@ select[multiple] {
 }
 
 textarea {
+    border-radius: var(--border-radius-5px);
     width: 460px;
     height: 200px;
     border: 1px solid var(--border-color3);
