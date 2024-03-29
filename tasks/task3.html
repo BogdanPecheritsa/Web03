@@ -13,7 +13,7 @@
 <header>
     <h1 class="header-task2-container">Task3</h1>
 </header>
-<form action="">
+<form action="" method="get" enctype="multipart/form-data">
     <section class="grid-container">
         <div class="left-flexbox-container">
             <fieldset class="personal-data-container">
@@ -56,9 +56,8 @@
                                       value="5">
                     <output name="value" for="triprating">5</output>
                 </label>
-                <label for="personnelrating" class="elements-of-form-container">
-                    Personnel rating<input type="number" name="personnelrating" id="personnelrating" min="0" max="10"
-                                           step="1" placeholder="5">
+                <label for="photos[]" class="elements-of-form-container">
+                    Trip's photos<input type="file" multiple name="photos[]" id="photos[]">
                 </label>
                 <label for="feedbacktext" class="elements-of-form-container">Feedback text<textarea name="feedbacktext"
                                                                                                     id="feedbacktext"
